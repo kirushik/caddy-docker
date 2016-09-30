@@ -2,7 +2,7 @@
 
 A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). Based on https://github.com/abiosoft/caddy-docker, which is awesome!
 
-[![](https://images.microbadger.com/badges/image/kirushik/caddy.svg)](https://microbadger.com/images/kirushik/caddy "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/kirushik/caddy-docker.svg)](https://microbadger.com/images/kirushik/caddy-docker "Get your own image badge on microbadger.com")
 
 ## Getting Started
 
