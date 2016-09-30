@@ -1,9 +1,9 @@
 FROM alpine:3.4
-MAINTAINER Abiola Ibrahim <abiola89@gmail.com>
+MAINTAINER Kirill Pimenov <kirushik@gmail.com>
 
 LABEL caddy_version="0.9.3" architecture="amd64"
 
-ARG plugins=git
+ARG plugins=cors,expires,ratelimit
 
 RUN apk add --no-cache openssh-client git tar curl
 

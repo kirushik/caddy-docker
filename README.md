@@ -1,46 +1,16 @@
 # caddy
 
-A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). This image includes the [git](http://caddyserver.com/docs/git) plugin.  Plugins can be configured via the `plugins` build arg.
+A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). Based on https://github.com/abiosoft/caddy-docker, which is awesome!
 
-[![](https://images.microbadger.com/badges/image/abiosoft/caddy.svg)](https://microbadger.com/images/abiosoft/caddy "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/kirushik/caddy.svg)](https://microbadger.com/images/kirushik/caddy "Get your own image badge on microbadger.com")
 
 ## Getting Started
 
 ```sh
-$ docker run -d -p 2015:2015 abiosoft/caddy
+$ docker run -d -p 2015:2015 kirushik/caddy
 ```
 
 Point your browser to `http://127.0.0.1:2015`.
-
-### PHP
-`:[<version>-]php` variant of this image bundles PHP-FPM alongside essential php extensions and [composer](https://getcomposer.org). e.g. `:php`, `:0.8.0-php`
-```sh
-$ docker run -d -p 2015:2015 abiosoft/caddy:php
-```
-Point your browser to `http://127.0.0.1:2015` and you will see a php info page.
-
-##### Local php source
-
-Replace `/path/to/php/src` with your php sources directory.
-```sh
-$ docker run -d -v /path/to/php/src:/srv -p 2015:2015 abiosoft/caddy:php
-```
-Point your browser to `http://127.0.0.1:2015`.
-
-##### Note
-Your `Caddyfile` must include the line `startup php-fpm`. For Caddy to be PID 1 in the container, php-fpm could not be started.
-
-### Using git sources
-
-Caddy can serve sites from git repository using [git](https://caddyserver.com/docs/git) plugin.
-
-##### Create Caddyfile
-
-Replace `github.com/abiosoft/webtest` with your repository.
-
-```sh
-$ printf "0.0.0.0\nroot src\ngit github.com/abiosoft/webtest" > Caddyfile
-```
 
 ##### Run the image
 
@@ -58,10 +28,7 @@ The image contains a default Caddyfile.
 ```
 0.0.0.0
 browse
-fastcgi / 127.0.0.1:9000 php # php variant only
-startup php-fpm # php variant only
 ```
-The last 2 lines are only present in the php variant.
 
 #### Paths in container
 
