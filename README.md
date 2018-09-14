@@ -2,6 +2,8 @@
 
 A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). Based on https://github.com/abiosoft/caddy-docker, which is awesome!
 
+Please note that this downloads binary builds of caddy, which are free _only for personal use!_
+
 [![](https://images.microbadger.com/badges/image/kirushik/caddy-docker.svg)](https://microbadger.com/images/kirushik/caddy-docker "Get your own image badge on microbadger.com")
 
 ## Getting Started
